@@ -1,4 +1,8 @@
 import streamlit as st
+from banxico_client import BanxicoClient
+
+client = BanxicoClient(token=st.secrets["BMX_TOKEN"])
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from banxico_client import BanxicoClient
